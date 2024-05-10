@@ -60,12 +60,9 @@ export default function Header() {
     <Navbar className="border-b-2">
       <Link
         to="/"
-        className="self-centered whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
+        className="self-centered whitespace-nowrap text-2xl sm:text-3xl font-semibold dark:text-white font-mono "
       >
-        <span className="px-2 py-1 bg-gradient-to-tr from-indigo-500 via-yellow-500 to-green-500 rounded-lg text-white">
-          Evans&apos;s
-        </span>
-        Blog
+        JayBlog
       </Link>
       <form onSubmit={handleSubmit}>
         <TextInput

@@ -14,4 +14,9 @@ export default {
     //require("tailwind-scrollbar"),
     // require("@tailwindcss/line-clamp"),
   ],
+  fontFamily: {
+    oswald: ['Oswald', 'sans-serif'],
+    dmsans: ['DM Sans', 'sans-serif'],
+    cto : ["Cantora One", "san-serif"]
+  }
 };
