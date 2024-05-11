@@ -7,10 +7,9 @@ import tailwindcss from 'tailwindcss' //1
 export default defineConfig({
   server: {
     proxy: {
-      "/api": {
-        target: "http://localhost:5000",
-        base: "./",
-      },
+      "/api/": "https://jayblog.onrender.com",
+      //"/api/": "http://localhost:5000",
+      //"/uploads/": "http://localhost:5000",
     },
   },
   plugins: [react(), tailwindcss()],

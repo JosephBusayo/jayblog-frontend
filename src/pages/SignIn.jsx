@@ -48,20 +48,7 @@ export default function SignIn() {
   return (
     <div className="min-h-screen mt-20">
       <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5">
-        <div className="flex-1">
-          {/* LEFT SIDE */}
-          <Link to="/" className="font-bold dark:text-white text-4xl">
-            <span className="px-2 py-1 bg-gradient-to-tr from-indigo-500 via-yellow-500 to-green-500 rounded-lg text-white">
-              Evans&apos;s
-            </span>
-            Blog
-          </Link>
-          <p className="text-sm mt-5">
-            You can sign in with your email and password or with Google created
-            account.
-          </p>
-        </div>
-        {/* RIGHT SIDE */}
+    
         <div className="flex-1">
           <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
             <div>

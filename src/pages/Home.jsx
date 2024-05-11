@@ -40,12 +40,18 @@ export default function Home() {
           <p className="text-gray-500 text-sm sm:text-base md:w-[50%] text-white">
             Discover the beauty of nature with our captivating blog! Explore breathtaking landscapes, fascinating wildlife, and hidden gems of botanical wonder. Join us on a journey of inspiration and awe as we celebrate the wonders of the natural world. Start exploring today!
           </p>
-          <Link
-            to="/search"
-            className="text-xs sm:text-sm text-teal-500 font-bold hover:underline"
-          >
-            <button type="button" className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">View all post</button>
-          </Link>
+
+          <div>
+
+            <button type="button" className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+              <Link
+                to="/search"
+                className="text-xs sm:text-sm text-white font-bold hover:underline"
+              >
+                View all post
+              </Link>
+            </button>
+          </div>
         </div>
       </div>
 

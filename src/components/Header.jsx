@@ -48,14 +48,6 @@ export default function Header() {
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefualt();
-
-    const urlParams = new URLSearchParams(location.search);
-    urlParams.set("SearchTerm", searchTerm);
-    const searchQuery = urlParams.toString();
-    navigate(`/search?${searchQuery}`)
-  };
   return (
     <Navbar className="border-b-2">
       <Link
@@ -64,19 +56,6 @@ export default function Header() {
       >
         JayBlog
       </Link>
-      <form onSubmit={handleSubmit}>
-        <TextInput
-          type="text"
-          placeholder="Search..."
-          rightIcon={AiOutlineSearch}
-          className="hidden lg:inline"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </form>
-      <Button className="w-12 h-10 lg:hidden" color="gray" pill>
-        <AiOutlineSearch />
-      </Button>
 
       <div className="flex gap-2 md:order-2">
         <Button
@@ -116,18 +95,13 @@ export default function Header() {
           </Link>
         )}
 
-        <Navbar.Toggle />
       </div>
-
       <Navbar.Collapse>
         <Navbar.Link active={path === "/"} as={"div"}>
           <Link to="/">Home</Link>
         </Navbar.Link>
         <Navbar.Link active={path === "/about"}>
           <Link to="/about">About</Link>
-        </Navbar.Link>
-        <Navbar.Link active={path === "/projects"} as={"div"}>
-          <Link to="/projects">Projects</Link>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>

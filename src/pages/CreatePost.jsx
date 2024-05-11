@@ -109,11 +109,10 @@ export default function CreatePost() {
             }
           >
             <option value="uncategorized">Select a category</option>
-            <option value="javascript">JavaScript</option>
-            <option value="reactjs">React.js</option>
-            <option value="nextjs">Next.js</option>
-            <option value="python">Python</option>
-            <option value="django">Django</option>
+            <option value="javascript">Wildlife</option>
+            <option value="reactjs">The deep blue</option>
+            <option value="nextjs">Outer space</option>
+            <option value="python">Green life</option>
           </Select>
         </div>
         <div className="flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3">
@@ -161,7 +160,7 @@ export default function CreatePost() {
             }
           }
         />
-        <Button type="submit" gradientDuoTone="purpleToPink">
+        <Button type="submit"className="bg-black" >
           Publish
         </Button>
         {
